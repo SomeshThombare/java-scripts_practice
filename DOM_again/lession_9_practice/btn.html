@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <button id="btn-9a">9a</button>
+    <button class="btn-9b">9b</button>
+
+    <button class="head" onclick="Head()">heads</button>
+    <button class="tail" onclick="Tail()">tails</button>
+
+    <p id="result"></p>
+
+    <input id='js-name-input' type="text" 
+        placeholder="enter name"
+        onkeydown="hendleKeyDown(event)">
+    <button onclick="printMessage()">Submit</button>
+    <p id="js-name-display"></p>
+    <script>
+   let btn = document.querySelector('#btn-9a');
+   console.log(btn.innerHTML);
+
+   let btn9b = document.querySelector('.btn-9b');
+   btn9b.innerHTML = '9b Done!';
+
+   function Head(){
+    document.querySelector('#result').innerText = 'Your Chose :head';
+   }
+
+   function Tail(){
+    document.querySelector('#result').innerText = 'Your choice: Tail';
+   }
+
+   function printMessage(){
+   var inputName = document.querySelector('#js-name-input');
+   var name = inputName.value;
+   var nameDisplay = document.querySelector('#js-name-display');
+   nameDisplay.innerHTML = `Your name is ${name}`;
+   inputName.value = "";
+   }
+
+   function hendleKeyDown(event){
+    // console.log(event);
+    // if(event.key === 'Enter'){
+    //     printMessage();
+    // }
+    {event.key === 'Enter' && printMessage();}
+   }
+    </script>
+</body>
+</html>

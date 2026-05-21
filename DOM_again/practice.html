@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+</head>
+<body>
+    <h3>Youtube Scubscribe Button</h3>
+    <button id="subs-btn" onclick="onclicksubscribe();">Subscribe</button>
+
+        <h3>Rock Paper scissor</h3>
+    <a href="#">Click Here</a>
+
+    
+    <p>Amzone Shipping calculator</p>
+    <p>Order under 40$ = +$10 shippign </p>
+    <p>Order abobe $50 = Free shipping</p>
+    
+    <input type="text" class = "js-price-input">
+  <button onClick = "
+    getPriceFromInput();
+  ">Calculate</button>
+  <p class = "js-total-cost"></p>
+
+
+    <script src="practice.js"></script>
+    <script>
+    function onclicksubscribe(){
+    const subsbttn = document.querySelector('#subs-btn');
+    if(subsbttn.innerHTML === 'Subscribe'){
+        subsbttn.innerHTML = 'Subscribed';
+    }else{
+        subsbttn.innerHTML = 'Subscribe';
+        }
+    }
+
+function getPriceFromInput(){
+      const inputPriceEl = document.querySelector(".js-price-input");
+      const priceDisplayEl = document.querySelector(".js-total-cost");
+  
+      const price = Number(inputPriceEl.value); 
+
+      {price >= 40 
+        ? priceDisplayEl.innerHTML = `$${price}`
+        : priceDisplayEl.innerHTML = `$${price + 10}`}
+    }
+    </script>
+</body>
+</html>

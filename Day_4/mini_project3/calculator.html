@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator</h2>
+    
+    <div>
+        <button onclick="sum += 1; console.log(sum);">1</button>
+        <button onclick="sum += 2; console.log(sum);">2</button>
+        <button onclick="sum += 3; console.log(sum);">3</button>
+        <button onclick=" sum += ' + ';console.log(sum)">+</button>
+    </div>
+<br>
+    <div>
+        <button onclick="sum += 4; console.log(sum)">4</button>
+        <button onclick="sum += 5;console.log(sum)">5</button>
+        <button onclick="sum += 6;console.log(sum)">6</button>
+        <button onclick=" sum += ' - ';console.log(sum)">-</button>
+    </div>
+<br>
+    <div>
+        <button onclick="sum += 7;console.log(sum)";>7</button>
+        <button onclick="sum += 8;console.log(sum)";>8</button>
+        <button onclick="sum += 9;console.log(sum)";>9</button>
+        <button  onclick=" sum += ' * ';console.log(sum)";>*</button>
+    </div>
+<br>
+    <div>
+        <button onclick="sum += 0; console.log(sum)";>0</button>
+        <button onclick="sum += ' . ';console.log(sum)";>.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="sum += ' / ';console.log(sum)";>/</button>
+    </div>
+<br>
+<div>
+    <button onclick="sum = ''; console.log('cleared');">clear</button>
+    
+</div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

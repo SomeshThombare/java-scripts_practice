@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <style>
+        .js-buttonn{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding:10px  15px;
+            text-decoration: double;
+        }
+        .is-toggled{
+            background-color: green;
+            color: white;
+        }
+
+        .js-music{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+        .is-toggledd{
+            background-color: green;
+            color: whitesmoke;
+        }
+
+        .not-active{
+            background-color: red;
+            color: white;
+        }
+        .is-active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <button class="js-button" onclick="classContainer();">Test</button>
+<br> <br>
+    <button class="js-buttonn" onclick="toggleButton()">Gaming</button>
+
+    <button class="js-music" onclick="musicTogglebtn()">Music</button>
+    <br><br><br>
+
+    <button id="male" class="js-gender not-active" onclick="toggleGender('#male');">Male</button>
+
+    <button id="female" class="js-gender not-active" onclick="toggleGender('#female');">Femal</button>
+
+    <button id="other" class="js-gender not-active" onclick="toggleGender('#other');">Other</button>
+
+
+    <script src="dom_practice.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper scsssor...</title>
+</head>
+<body>
+    <h2>Rock Paper Scissor</h2>
+   
+    <button 
+    let userMove;
+    let computerMove;
+    onclick="
+    userMove = 1;
+    computerMove = Math.ceil(Math.random()*3);
+    if(userMove === computerMove){
+        console.log(`It's a tie`)
+    }else if(computerMove === 3){
+        console.log(`user won`)
+    }else{
+        console.log(`computer win`)
+    }
+    ">Rock</button>
+
+
+    <button onclick="
+    userMove = 2;
+    computerMove = Math.ceil(Math.random()*3);
+    
+    if(userMove === computerMove){
+        console.log(`It's a tie`)
+    }else if(computerMove === 1){
+        console.log(`user won`)
+    }else{
+        console.log(`computer win`)
+    }
+    ">Paper</button>
+
+    <button onclick="
+    userMove = 3;
+    computerMove = Math.ceil(Math.random()*3);
+
+    if(userMove === computerMove){
+        console.log(`It's a tie`)
+    }else if(computerMove === 2){
+        console.log(`user won`)
+    }else{
+        console.log(`computer win`)
+    }
+    ">Scissor</button>
+
+    <script src="script.js"> </script>
+   
+</body>
+</html>
