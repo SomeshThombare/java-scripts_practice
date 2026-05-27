@@ -1,7 +1,7 @@
 // array methods
 let arr =[1,2,3,4,5];
 
-arr.forEach((el) =>{
+arr.forEach((el) =>{ //(el)is callback function
     console.log(el);
 });
 

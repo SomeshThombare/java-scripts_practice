@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12c</title>
+  </head>
+  <body>
+    <button class="js-start-btn">Start</button>
+  </body>
+
+  <script>
+    const startbtn = document.querySelector(".js-start-btn");
+    startbtn.addEventListener("click", () => {
+      setTimeout(() => {
+        startbtn.innerHTML = "Finished!";
+      }, 1000);
+    });
+  </script>
+</html>
