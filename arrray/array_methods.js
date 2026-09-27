@@ -5,6 +5,7 @@ console.log(car_brans);
 
 // 1.Push methods(insert) at the end of list
 car_brans.push('toyota');
+car_brans.puhs('BMW');
 console.log(car_brans);
 
 //2.pop methods (delete)end of the list element delte
